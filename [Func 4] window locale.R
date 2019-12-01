@@ -1,7 +1,7 @@
 
 # Windows에서 locale 관련 함수들 모음 ----------------------------------------------
 
-# 현재 설정된 로케일을 확인합니다. 
+# 현재 설정된 로케일을 확인
 Sys.getlocale()
 ## [1] "LC_COLLATE=Koren_Korea.949;
 ## LC_CTYPE=Koren_Korea.949;
@@ -22,7 +22,6 @@ Sys.setlocale(category = 'LC_ALL', locale = 'english')
 ## LC_NUMERIC=C;
 ## LC_TIME=English_United States.1252"
 
-# 문자 인코딩 방식을 확인합니다. 
 localeToCharset()
 ## [1] "ISO8859-1"
 
@@ -35,7 +34,6 @@ Sys.setlocale(category = 'LC_ALL', locale = 'chinese')
 ## LC_NUMERIC=C;
 ## LC_TIME=Chinese (Simplified)_China.936"
 
-# 문자 인코딩 방식을 확인
 localeToCharset()
 ## [1] "CP936"
 
@@ -48,16 +46,13 @@ Sys.setlocale(category = 'LC_ALL', locale = 'japanese')
 ## LC_NUMERIC=C;
 ## LC_TIME=Japanese_Japan.932"
 
-# 문자 인코딩 방식을 확인합니다. 
 localeToCharset()
 ## [1] "CP932"
-
 
 # Unix Default 로케일로 변경합니다. 
 Sys.setlocale(category = 'LC_ALL', locale = 'C')
 ## [1] "C"
 
-# 문자 인코딩 방식을 확인합니다. 
 localeToCharset()
 ## [1] "ASCII"
 
